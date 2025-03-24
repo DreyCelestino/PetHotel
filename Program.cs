@@ -41,13 +41,13 @@ Console.WriteLine("+=========================================================+")
 Console.Write("| ");
 
 Console.ForegroundColor = ConsoleColor.Red;
-Console.Write($"Espécie: {especie.PadLeft(15, '.')}"); //15
+Console.Write($"Espécie: {especie.PadLeft(15, '.').Remove(15)}"); //15
 
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.Write(" | ");
 
 Console.ForegroundColor = ConsoleColor.Red;
-Console.Write($"Raça: {raca.PadLeft(22, '.')}"); //22
+Console.Write($"Raça: {raca.PadLeft(22, '.').Remove(22)}"); //22
 
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.WriteLine(" |");
@@ -59,7 +59,7 @@ Console.WriteLine("+=========================================================+")
 Console.Write("| ");
 
 Console.ForegroundColor = ConsoleColor.Red;
-Console.Write($"Atende pela alcunha de: {alcunha.PadLeft(31, '.')}");//31
+Console.Write($"Atende pela alcunha de: {alcunha.PadLeft(31, '.').Remove(31)}");//31
 
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.WriteLine(" |");
@@ -68,13 +68,13 @@ Console.WriteLine(" |");
 Console.Write("| ");
 
 Console.ForegroundColor = ConsoleColor.Red;
-Console.Write($"Idade: {idade.PadLeft(2, '0')} ano(s)"); //00
+Console.Write($"Idade: {idade.PadLeft(2, '0').Remove(2)} ano(s)"); //00
 
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.Write(" | ");
 
 Console.ForegroundColor = ConsoleColor.Red;
-Console.Write($"Pelagem/cor: {pelo.PadLeft(23, '.')}"); //23
+Console.Write($"Pelagem/cor: {pelo.PadLeft(23, '.').Remove(23)}"); //23
 
 Console.ForegroundColor = ConsoleColor.DarkGray;
 Console.WriteLine(" |");
